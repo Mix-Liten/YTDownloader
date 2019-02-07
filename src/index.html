@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>YouTube Downloader</title>
+  <style>
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+      background-color: #282b2e;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-family: Arial;
+    }
+
+    /* * {
+      text-align: center;
+    } */
+
+    .heading {
+      margin-top: -10vh;
+    }
+
+    .URL-input,
+    .type-select,
+    .convert-button {
+      font-size: 1rem;
+      height: 3rem;
+      padding: 5px 10px;
+    }
+
+    .URL-input {
+      height: 2rem;
+      border-radius: 4px 0px 0px 4px;
+      width: 30em;
+      text-align: left;
+      border: 2px solid #EEEEEE;
+      background: #EEEEEE;
+      outline: none;
+    }
+
+    .URL-input:focus {
+      border: 2px solid #0485ff;
+    }
+
+    .type-select {
+      width: 5em;
+      text-align: left;
+      border: 2px solid #EEEEEE;
+      background: #EEEEEE;
+      outline: none;
+    }
+
+    .type-select:focus {
+      border: 2px solid #0485ff;
+    }
+
+    .convert-button {
+      border-radius: 0px 4px 4px 0px;
+      border: 2px solid #0485ff;
+      background: #0485ff;
+      color: white;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <h1 class="heading">YouTube Downloader !</h1>
+  <div>
+    <input class="URL-input" placeholder="Video URL e.g. https://www.youtube.com/watch?v=bzJDimvPW1Y">
+    <select class="type-select">
+      <option value="mp4">MP4</option>
+      <option value="mp3">MP3</option>
+    </select>
+    <button class="convert-button">Convert</button>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+
+</html>
